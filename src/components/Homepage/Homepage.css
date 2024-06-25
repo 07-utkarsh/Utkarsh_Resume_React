@@ -1,0 +1,50 @@
+.homepage_container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+
+}
+.homepage_left{
+    flex: 0.6;
+    padding: 30px;
+}
+.homepage_left_h1{
+    font-size: 25px;
+}
+.red_color{
+    color: rgb(99, 72, 255);
+}
+.homepage_left_h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.homepage_left_h3{
+    font-size: 30px;
+}
+.homepage_left_description{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.homepage_logo{
+    margin-top: 30px;
+    height: 80px;
+}
+.homepage_left_button{
+    margin-top: 5px;
+    font-size: 20px;
+    padding:8px 10px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(99, 72, 255);
+    border-radius: 25px;
+    border-width: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.homepage_right{
+    flex: 0.4;
+
+}
+.homepage_right > img{
+    width: 100%;
+}
