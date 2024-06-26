@@ -1,18 +1,18 @@
+
 .techstack_icons{
-    flex:33%;
-    width:120px;
+    flex: 33%;
+    width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
+
 .techstack_icons > img{
-    margin-bottom: 14px;
-    width: 40px;
+    width: 60px;
     cursor: pointer;
-
 }
+
 .techstack_icons > img:hover{
-    transform:scale(1.2)
+    transform: scale(0.8);
 }

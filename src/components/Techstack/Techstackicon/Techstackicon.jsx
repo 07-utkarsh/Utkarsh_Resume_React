@@ -1,12 +1,32 @@
- import './Techstackicon.css';
+import './Techstackicon.css';
+import { motion } from 'framer-motion';
 
 
-export default function Techstackicon(props){
-    console.log('props',props);
+const iconVariants = (duration) => ({
+    initial: { y: -10 },
+    animate: {
+        y: [10, -10],
+        transition: {
+            duration: duration,
+            ease: 'linear',
+            repeat: Infinity,
+            repeatType: "reverse"
+        }
+    }
+})
+
+export default function Techstackicon(props) {
+    console.log('props', props)
     return (
-        <div className='techstack_icons'>
-                    <img src={props.image} alt={props.altproperty}/>
-                    <p>{props.title}</p>
-                </div>
+        <motion.div
+
+            variants={iconVariants(props.duration)}
+            initial='initial'
+            animate='animate'
+
+            className='techstack_icons'>
+            <img src={props.image} alt={props.altProperty} />
+            <p>{props.title}</p>
+        </motion.div>
     )
 }
